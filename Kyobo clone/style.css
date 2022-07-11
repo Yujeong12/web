@@ -1,0 +1,25 @@
+body{
+    width:1010px;
+    height:613px;
+    display:inline-block;
+    margin:0px auto;
+}
+li {
+    list-style-type: none;
+    float:left;
+}
+a {
+    text-decoration: none;
+}
+img {
+    width:175px;
+    height:48px;
+    margin-left: 20px;
+    float:left;
+}
+#main_container{
+  width:100%;
+  height:413px;
+  background-color: pink;  
+  margin : 10px auto;
+}
