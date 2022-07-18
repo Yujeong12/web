@@ -1,86 +1,97 @@
 <!DOCTYPE html>
-<head>
-
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <div id="header">
-        <div id="header_menu_bar">
-            <ul>
-                <li>
-                        <a href="">로그인</a>
-                    </li>
-                    <li>
-                        <a href="">회원가입</a>
-                    </li>
-                    <li>
-                        <a href="">출석체크</a>
-                    </li>
-                    <li>
-                        <a href="">고객센터</a>
-                    </li>
-                    <li>
-                        <a href="">주문배송</a>
-                    </li>
-            </ul>
-        </div>
-        <div id="search">
-            <ul>
-                <div id="search_promotion"">
-                    <li class="first">
-                        <a href="">교보굿즈 베스트</a> 
-                    </li>
-                    <li class="second">
-                        <a href="">똑똑한 하루</a>
-                    </li>
-                    <li class="third">
-                        <a href="">외국어 사은품 8종</a>
-                    </li>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="container">
+        <div class="header">
+            <div class="top_right">
+                <ul>
+                    <li id="login"><a href=""><button id="login_btn">로그인</button></a></li>
+                    <li><a href="">회원가입</a></li>
+                    <li><a href="">출석체크</a></li>
+                    <li><a href="">고객센터</a></li>
+                    <li><a href="">주문배송</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <img src="./Logo_image.png" alt="교보문고 로고" id="logo_img"/>
+                <div class="header_banner">
+                    <img src="./banner_img.png" alt="광고 이미지"/>
+                    <div class="header_banner_nav">
+                        <p><b>1</b>/3</p>
+                        <button>◀</button>
+                        <button>▶</button>
+                    </div>
                 </div>
-            </ul>
-            <img src="./Logo_image.png">
-            <div id="search_bar">
-                <input id="search" type="text" placeholder="검색어 입력">
+                <div class="search_bar">
+                    <div class="search_txt">
+                        <ul>
+                            <li style="border-right:1px solid gray"><a href="">교보굿즈 베스트</a></li>
+                            <li style="border-right:1px solid gray"><a href="">똑똑한 하루</a></li>
+                            <li><a href="">외국어 사은품 8종</a></li>
+                        </ul>
+                    </div>
+                    <input type="text" placeholder="검색어 입력" id="search_input"/>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="nav_bar">
-        <ul>
-            <div id="navigation">
-                <li>
-                    <a href="">국내도서</a>
-                </li>
-                <li>
-                    <a href="">외국도서</a>
-                </li>
-                <li>
-                    <a href="">eBook</a>
-                </li>
-                <li>
-                    <a href="">웹소설</a>
-                </li>
-                <li>
-                    <a href="">기프트</a>
-                </li>
-                <li>
-                    <a href="">음반</a>
-                </li>
-                <li>
-                    <a href="">중고장터</a>
-                </li>
-                <li>
-                    <a href="">베스트 신상품</a>
-                </li>
-                <li>
-                    <a href="">이벤트 사은품</a>
-                </li>
-                <li>
-                    <a href="">Picks</a>
-                </li>
+        <div class="category">
+            <!-- modal bar -->
+            <ul>
+                <li><a href="">국내도서</a></li>
+                <li><a href="">외국도서</a></li>
+                <li><a href="">eBook</a></li>
+                <li><a href="">웹소설</a></li>
+                <li><a href="">기프트</a></li>
+                <li><a href="">음반</a></li>
+                <li><a href="">중고장터<img src="" alt="더보기"/></a></li>
+                <li><a href="">베스트 신상품</a></li>
+                <li><a href="">이벤트 사은품</a></li>
+                <li><a href="">Picks</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="main_banner">
+                <img src=""/>
+                <div class="main_banner_category">
+                    <ul>
+                        <li><a href="">요즘 이 책</a></li>
+                        <li><a href="">핫이슈</a></li>
+                        <li><a href="">새로나온책</a></li>
+                        <li><a href="">기획/테마</a></li>
+                        <li><a href="">eBook</a></li>
+                        <li><a href="">sam</a></li>
+                        <li><a href="">한정특가</a></li>
+                    </ul>
+                </div>
+                <div class="main_right_banner">
+                    <img src="" alt="배너 이미지"/>
+                </div>
             </div>
-        </ul>
-    </div>
-    <div id="main_container">
-        
-    </div>
-</body>
+            <div class="main_bottom_banner">
+                <div class="bottom_banner" id="bottom_banner_1">
+                    <img src="" alt="배너 이미지"/>
+                    <div class="min_banner" id="min_banner_1">
+                        <img src="" alt="배너 이미지"/>
+                    </div>
+                </div>
+                <div class="bottom_banner" id="bottom_banner_2">
+                    <img src="" alt="배너 이미지"/>
+                    <div class="min_banner" id="min_banner_2">
+                        <img src="" alt="배너 이미지"/>
+                    </div>
+                </div>
+                <div class="bottom_banner" id="bottom_banner_3">
+                    <img src="" alt="배너 이미지"/>
+                    <div class="min_banner" id="min_banner_3">
+                        <img src="" alt="배너 이미지"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>
