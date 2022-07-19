@@ -88,7 +88,16 @@ a{
 .header_banner_nav{
     float:right;
     font-size:8px;
+    width:fit-content;
 }
-.header_banner_nav > button {
-    font-size:3px;
+.header_banner_nav > p{
+    margin:0px 5px;
+    float:left;
+}
+.header_banner_btn {
+    float:right;
+}
+.header_banner_btn > button {
+    width:10px;
+    height:15px;
 }
