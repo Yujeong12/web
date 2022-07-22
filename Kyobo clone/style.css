@@ -109,3 +109,6 @@ a{
 .category > ul > li > a {
     color:white;
 }
+.category > ul > li{
+    margin:20px;
+}
