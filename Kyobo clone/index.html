@@ -9,8 +9,8 @@
         <div class="header">
             <div class="top_right">
                 <ul>
-                    <li id="login"><a href=""><button id="login_btn">로그인</button></a></li>
-                    <li><a href="">회원가입</a></li>
+                    <li id="login"><button id="login_btn" onclick="login_page()">로그인</button></li>
+                    <li id="'join_li"><a href="join.html">회원가입</a></li>
                     <li><a href="">출석체크</a></li>
                     <li><a href="">고객센터</a></li>
                     <li><a href="">주문배송</a></li>
@@ -21,10 +21,10 @@
                 <div class="header_banner">
                     <img src="./banner_img.png" alt="광고 이미지"/>
                     <div class="header_banner_nav">
-                        <p><b>1</b>/3</p>
+                        <p id="banner_num"><b>1</b>/3</p>
                         <div class="header_banner_btn">
-                        <button></button>
-                        <button></button>
+                        <button onclick="banner_btn('prev')"></button>
+                        <button onclick="banner_btn('next')"></button>
                         </div>
                     </div>
                 </div>
@@ -49,51 +49,25 @@
                 <li><a href="">웹소설</a></li>
                 <li><a href="">기프트</a></li>
                 <li><a href="">음반</a></li>
-                <li><a href="">중고장터<img src="" alt="더보기"/></a></li>
-                <li><a href="">베스트 신상품</a></li>
-                <li><a href="">이벤트 사은품</a></li>
-                <li><a href="">Picks</a></li>
+                <li><a href="">중고장터</a></li>
             </ul>
         </div>
         <div class="main">
             <div class="main_banner">
-                <img src=""/>
                 <div class="main_banner_category">
                     <ul>
-                        <li><a href="">요즘 이 책</a></li>
-                        <li><a href="">핫이슈</a></li>
-                        <li><a href="">새로나온책</a></li>
-                        <li><a href="">기획/테마</a></li>
-                        <li><a href="">eBook</a></li>
-                        <li><a href="">sam</a></li>
-                        <li><a href="">한정특가</a></li>
+                        <button id="Trend" onclick="mainBanner('pink')"><li>요즘 이 책</li></button>
+                        <button id="Hot" onclick="mainBanner('yellogreen')"><li>핫이슈</li></button>
+                        <button id="New" onclick="mainBanner('gray')"><li>새로나온책</li></button>
+                        <button id="Theme" onclick="mainBanner('orange')"><li>기획/테마</li></button>
+                        <button id="Ebook" onclick="mainBanner('dodgerblue')"><li>eBook</li></button>
+                        <button id="sam" onclick="mainBanner('darkolivegreen')"><li>sam</li></button>
+                        <button id="Special" onclick="mainBanner('skyblue')"><li>한정특가</li></button>
                     </ul>
-                </div>
-                <div class="main_right_banner">
-                    <img src="" alt="배너 이미지"/>
-                </div>
-            </div>
-            <div class="main_bottom_banner">
-                <div class="bottom_banner" id="bottom_banner_1">
-                    <img src="" alt="배너 이미지"/>
-                    <div class="min_banner" id="min_banner_1">
-                        <img src="" alt="배너 이미지"/>
-                    </div>
-                </div>
-                <div class="bottom_banner" id="bottom_banner_2">
-                    <img src="" alt="배너 이미지"/>
-                    <div class="min_banner" id="min_banner_2">
-                        <img src="" alt="배너 이미지"/>
-                    </div>
-                </div>
-                <div class="bottom_banner" id="bottom_banner_3">
-                    <img src="" alt="배너 이미지"/>
-                    <div class="min_banner" id="min_banner_3">
-                        <img src="" alt="배너 이미지"/>
-                    </div>
                 </div>
             </div>
         </div>
         </div>
     </body>
+    <script src="javascript.js"></script>
 </html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>회원가입 페이지</title>
+        <style>
+            body{
+                display:flex;
+                text-align: center;
+            }
+
+            #join_container{
+                background-color: white;
+                width:500px;
+                height:500px;
+                padding:10px 30px;
+                margin:50px auto auto;
+                text-align: center;
+                border:solid black 1px;
+                border-radius: 30px;
+            }
+            ul{
+                list-style:none;
+            }
+            input {
+                background-color: aliceblue;
+                width:300px;
+                height:40px;
+                margin:10px;
+                font-size: 14px;
+                border-radius: 10px;
+                padding-left:10px;
+                margin-left:0px;
+            }
+            div > button {
+                width:100px;
+                height:50px;
+                background-color:#dadfff;
+                color:black;
+                border-radius: 30px;
+                border:solid black 1px;
+            }
+            div >  button:hover {
+                background-color:#a0abef
+            }
+            a {
+                text-decoration: none;
+            }
+            a:hover{
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="join_container">
+            <h1>회원가입</h1>
+            <ul>
+            <li><input type="text" id="idvalue" placeholder="아이디 입력" value=""></li>
+            <li><input type="password" placeholder="비밀번호 입력" id="pwd" value=""></li>
+            <li><input type="password" placeholder="비밀번호 확인" id="pwdCheck" value=""></li>
+        </ul>
+            <button id="loginBtn" onclick="join(document.getElementById('idvalue').value, document.getElementById('pwd').value), documnet.getElementById('pwdCheck').value">회원가입</button>
+            <h3 id="txt"></h3>
+        </div>
+    </body>
+    <script src="javascript.js"></script>
+</html>

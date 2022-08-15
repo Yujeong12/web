@@ -23,6 +23,7 @@ li {
 a{
     text-decoration: none;  
 }
+
 .top_right{
     width:fit-content;
     height:30px;
@@ -109,6 +110,38 @@ a{
 .category > ul > li > a {
     color:white;
 }
+.category > ul > li > a:hover {
+    color:darkgray;
+}
 .category > ul > li{
     margin:20px;
+}
+.main_banner{
+    background-color: pink;
+    width:relative;
+    height:400px;
+    margin-top:0px;
+}
+.main_banner_category > ul {
+    margin-top:0px;
+    margin-right:0px;
+    padding-top:330px;
+    text-align: center;
+}
+.main_banner_category > ul > li {
+    margin:0px;
+}
+.main_banner_category > ul > button {
+    border-radius: 0px;
+    border:solid gray 0.5px;
+    border-right:none;
+    background: white;
+    padding:15px 20px;
+}
+.main_banner_category > ul > button:hover {
+    background:#646B9A;
+    color:white;
+}
+#prof {
+    width:fit-content;
 }
